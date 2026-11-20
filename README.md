@@ -47,3 +47,8 @@ Why:
 • b adds 2 each time add() runs (2 + 2 = 4), then adds 1 more (4 + 1 = 5). So b prints 5.
 
 
+Actual Output:
+1
+5 
+  but to be honest some to understand it difcult due to that the language is new to me and honstly my prediction i would be wrong but with ai by searching 
+  try to under stand is how i worked with it not full my side !!!!.

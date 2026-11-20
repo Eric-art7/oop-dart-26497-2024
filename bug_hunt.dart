@@ -37,3 +37,4 @@ void main() {
   p.battery = 100;
   print(p.battery); // Prints: 100
 }
+

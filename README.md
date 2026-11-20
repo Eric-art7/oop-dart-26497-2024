@@ -32,11 +32,11 @@ part 4:
   
 | Bug            | The line                           | Why it is wrong (your words)                  | Your fix                                 |
 | :------------- | :--------------------------------- | :-------------------------------------------- | :--------------------------------------- |
-| **1**          | `String _brand;` `int _battery;`   | Fields need starting values in Dart.          | Set `_brand = '';` and `_battery = 0;`.  |
-| **2**          | `SmartPhone(...) {`                | Does not pass values to parent `Phone`.       | Add `: super(brand, battery)`.           |
-| **3**          | `@override`                        | `Phone` has no `restart()` method.            | Remove `@override`.                      |
-| **4**          | `p.battery = 100;`                 | `Phone` has no setter for `battery`.          | Add `set battery` (accepting 0–100).     |
-| **5**          | `print(p.battery());`              | `battery` is a getter, not a method.          | Remove `()`: `print(p.battery);`.        |
+| 1              | `String _brand;` `int _battery;`   | Fields need starting values in Dart.          | Set `_brand = '';` and `_battery = 0;`.  |
+| 2              | `SmartPhone(...) {`                | Does not pass values to parent `Phone`.       | Add `: super(brand, battery)`.           |
+| 3              | `@override`                        | `Phone` has no `restart()` method.            | Remove `@override`.                      |
+| 4              | `p.battery = 100;`                 | `Phone` has no setter for `battery`.          | Add `set battery` (accepting 0–100).     |
+| 5              | `print(p.battery());`              | `battery` is a getter, not a method.          | Remove `()`: `print(p.battery);`.        |
 | **Not a bug**  | `Phone p = new Phone(...);`        | `new` is optional in Dart, so it still works. | (none)                                   |
 
 

@@ -8,3 +8,19 @@ The ~/ operator performs integer division (truncating division). It divides two 
 Example & Difference:
 • 237 * 17 / 100 outputs 40.29 (standard division / always returns a double with decimals).
 • 237 * 17 ~/ 100 outputs 40 (integer division ~/ removes .29 and returns an int).
+
+ output 
+ Error: name too short
+ Owner: semana munezero eric  | Balance: 25000 RWF
+ Owner: semana munezero eric | Balance: 25000 RWF
+ Error: top-up must be 500 to 50000 RWF
+ 2
+ Paid 3000 RWF
+ Owner: semana munezero eric | Balance: 21000 RWF
+ Student discount: 400 RWF
+ Paid 1600 RWF
+ Owner: semana munezero eric  | Balance: 18400 RWF
+ Student card: 20% off
+  
+ Exited.
+  

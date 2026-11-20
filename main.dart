@@ -20,7 +20,7 @@ class BusCard {
  
   pay(int fare){
     if (fare > _balance){ print ('Card declined');} else 
-    { _balance -= fare; print('Paid <fare> RWF');  }
+    { _balance -= fare; print('Paid $fare RWF');  }
   }
  
 }
@@ -30,8 +30,32 @@ class StudentCard extends BusCard {
    StudentCard(String owner, int balance, int discount) : super(owner, balance) { _discount = discount; }
    @override void showInfo() { super.showInfo();      print('Student card: $_discount% off'); }
     
-   @override pay(int fare){ int off = fare * _discount ~/ 100;   print( 'Student discount: <off> RWF');
+   @override pay(int fare){ int off = fare * _discount ~/ 100;   print( 'Student discount: $off RWF');
      super.pay(fare - off);
   }
-  
+
 } 
+
+void main() {
+
+  BusCard card = BusCard('semana munezero eric ', 25000);
+  card.owner = 'Al';                    
+  card.showInfo();
+
+  card.owner = 'semana munezero eric';
+  card.showInfo();
+
+  card.topUp(100);
+  card.topUp(2000);
+
+  card.pay(3000);
+  card.pay(3000);
+  card.showInfo();
+
+  StudentCard studentcard = StudentCard('semana munezero eric ', 20000, 20);
+  studentcard.pay(2000);
+  studentcard.showInfo();
+
+
+
+}

@@ -37,4 +37,13 @@ part 4:
 | **Not a bug**  | `Phone p = new Phone(...);`        | `new` is optional in Dart, so it still works. | (none)                                   |
 
 
+part 5:
+
+The code will print:
+1
+5
+Why:
+• a starts at 0, adds 1, and ignores -5 because the setter blocks negative numbers. So a prints 1.
+• b adds 2 each time add() runs (2 + 2 = 4), then adds 1 more (4 + 1 = 5). So b prints 5.
+
 

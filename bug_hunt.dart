@@ -12,8 +12,7 @@ class Phone {
   }
 
   set battery(int value) {
-    if (value >= 0 && value <= 100) {
-      _battery = value;
+    if (value >= 0 && value <= 100) { _battery = value;
     } else {
       print('Error: battery must be 0 to 100');
     }
